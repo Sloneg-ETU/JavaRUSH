@@ -1,12 +1,10 @@
-package ArsentyevStudy;
+package com.javarush.task.task01.task0133;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+/* 
+Не думать о секундах…
+*/
 
-/**
- * A Camel Application
- */
-public class MainApp {
+public class Solution {
     public static void main(String[] args) {
         System.out.println(getCountSecondsPassedInCurrentHour(12345));
     }
