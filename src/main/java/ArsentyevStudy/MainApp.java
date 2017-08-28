@@ -7,12 +7,29 @@ import java.io.InputStreamReader;
  * A Camel Application
  */
 public class MainApp {
-    public static void main(String[] args) {
-        System.out.println(getCountSecondsPassedInCurrentHour(12345));
+    public String name;
+    public int age;
+    public int weight;
+    public int strength;
+
+    public MainApp() {
     }
 
-    public static int getCountSecondsPassedInCurrentHour(int seconds) {
-        int result = seconds % 3600;
-        return result;
+    public boolean fight(MainApp anotherCat) {
+        if (this.age < anotherCat.age){
+            if (this.strength > anotherCat.strength){
+                if (this.weight > anotherCat.weight){
+                    return true;
+                }
+                else return false;
+            }
+            else return false;
+        }
+        else return false;
+    }
+
+    public static void main(String[] args) {
+        System.out.printl();
+
     }
 }
